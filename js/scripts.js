@@ -7,7 +7,7 @@
 // Scripts
 // 
 
-window.addEventListener('DOMContentLoaded', event => {
+window.addEventListener('DOMContentLoaded', function() {
 
     // Navbar shrink function
     var navbarShrink = function () {
@@ -33,10 +33,10 @@ window.addEventListener('DOMContentLoaded', event => {
     const mainNav = document.body.querySelector('#mainNav');
     if (mainNav) {
         new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            rootMargin: '0px 0px -40%',
-        });
-    };
+            target: "#mainNav",
+            rootMargin: "0px 0px -40%",
+        })
+    }
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
