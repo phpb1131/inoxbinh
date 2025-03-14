@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://inoxbinh.com/sitemap.xml
