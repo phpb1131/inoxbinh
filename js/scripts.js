@@ -1,4 +1,4 @@
-/*!
+﻿/*!
 * Start Bootstrap - Agency v7.0.12 (https://startbootstrap.com/theme/agency)
 * Copyright 2013-2023 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
@@ -49,6 +49,14 @@ window.addEventListener('DOMContentLoaded', event => {
                 navbarToggler.click();
             }
         });
+    });
+
+    var button = document.querySelector('.back-to-top');
+    button.style.display = 'block'; /* Hiện nút */
+
+    // Cuộn lên đầu khi bấm nút
+    document.querySelector('.back-to-top').addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' }); /* Cuộn mượt lên đầu */
     });
 
 });
