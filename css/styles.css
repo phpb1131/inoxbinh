@@ -10953,6 +10953,14 @@ header.masthead {
   background-position: center center;
   background-size: cover;
 }
+
+@media (max-width: 768px) {
+    header.masthead {
+        background-image: url("../assets/img/HeaderInoxBinh-mobile.png");     
+        background-size: cover; /* Đảm bảo hình ảnh bao phủ toàn bộ khu vực */
+        background-position: center; /* Đặt hình ảnh ở giữa */
+    }
+}
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
